@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebAPP</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Formulario de Registro de Empleados</h1>
+        <form id="registroForm">
+            <div class="form-group">
+                <label for="nombre">Nombre del Empleado:</label>
+                <input type="text" id="nombre" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="puesto">Puesto:</label>
+                <input type="text" id="puesto" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="departamento">Departamento:</label>
+                <select id="departamento" class="form-control" required>
+                    <option value="">Seleccione un departamento</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="municipio">Municipio:</label>
+                <select id="municipio" class="form-control" required>
+                    <option value="">Seleccione un municipio</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Agregar</button>
+        </form>
+        <h2 class="mt-5">Registros de Empleados</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Puesto</th>
+                    <th>Municipio</th>
+                    <th>Departamento</th>
+                </tr>
+            </thead>
+            <tbody id="registrosTableBody">
+                <!-- Los registros se agregarán aquí -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
